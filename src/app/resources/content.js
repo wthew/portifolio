@@ -1,21 +1,21 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-    firstName: 'Selene',
-    lastName:  'Yu',
+    firstName: 'Wellington',
+    lastName:  'Queiroz',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Design Engineer',
+    role:      'Fullstack Developer',
     avatar:    '/images/avatar.jpg',
-    location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    location:  'America/Sao_Paulo',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+    languages: ['English', 'Portuguese']  // optional: Leave the array empty if you don't want to display languages
 }
 
 const newsletter = {
     display: true,
     title: <>Subscribe to {person.firstName}'s Newsletter</>,
-    description: <>I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering.</>
+    description: <>I occasionally write about technology, and share thoughts on the intersection of creativity and engineering.</>
 }
 
 const social = [
@@ -26,20 +26,20 @@ const social = [
         icon: 'github',
         link: 'https://github.com/once-ui-system/nextjs-starter',
     },
-    {
-        name: 'LinkedIn',
-        icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/once-ui/',
-    },
-    {
-        name: 'X',
-        icon: 'x',
-        link: '',
-    },
+    // {
+    //     name: 'LinkedIn',
+    //     icon: 'linkedin',
+    //     link: 'https://www.linkedin.com/company/once-ui/',
+    // },
+    // {
+    //     name: 'X',
+    //     icon: 'x',
+    //     link: '',
+    // },
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:example@gmail.com',
+        link: 'the.w.3107@gmail.com',
     },
 ]
 
@@ -69,7 +69,7 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+        description: <>Wellington Queiroz is a fullstack developer passionate about crafting seamless digital solutions that bridge the gap between functionality and user experience. His expertise spans web and mobile development, interactive platforms, and the integration of cutting-edge technologies to deliver impactful and scalable results..</>
     },
     work: {
         display: true, // set to false to hide this section
