@@ -8,13 +8,13 @@ const createI18nContent = (t) => {
             return `${this.firstName} ${this.lastName}`;
         },
         role:      t("person.role"),
-        avatar:    '/images/avatar.jpg',
-        location:  'América/São_Paulo',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+        avatar:    '/images/avatar-well.jpg',
+        location:  'America/Sao_Paulo',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
         languages: ['English', 'Portuguese']  // optional: Leave the array empty if you don't want to display languages
     }
 
     const newsletter = {
-        display: true,
+        display: false,
         title: <>{t("newsletter.title", {firstName: person.firstName})}</>,
         description: <>{t("newsletter.description")}</>
     }
