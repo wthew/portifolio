@@ -124,10 +124,10 @@ export default function Home(
 					</Flex>
 				
 			</Flex>
-			<RevealFx translateY="16" delay={0.6}>
+			{/* <RevealFx translateY="16" delay={0.6}>
 				<Projects range={[1,1]} locale={locale}/>
-			</RevealFx>
-			{routes['/blog'] && (
+			</RevealFx> */}
+			{/* {routes['/blog'] && (
 				<Flex
 					fillWidth gap="24"
 					mobileDirection="column">
@@ -144,8 +144,8 @@ export default function Home(
 						<Posts range={[1,2]} columns="2" locale={locale}/>
 					</Flex>
 				</Flex>
-			)}
-			<Projects range={[2]} locale={locale}/>
+			)} */}
+			{/* <Projects range={[2]} locale={locale}/> */}
 			{ newsletter.display &&
 				<Mailchimp newsletter={newsletter} />
 			}
