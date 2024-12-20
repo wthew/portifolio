@@ -60,8 +60,7 @@ const home = {
       development, a fullstack with experience in <InlineCode>apps</InlineCode>,{" "}
       <InlineCode>landing-pages</InlineCode>,{" "}
       <InlineCode>server-side</InlineCode>, <InlineCode>client-side</InlineCode>{" "}
-      and some stuffs in personal projects, including a{" "}
-      <InlineCode>assistant</InlineCode> soon to be available for everyone.
+      and personal projects.
     </>
   ),
 };
@@ -123,7 +122,8 @@ const about = {
             <InlineCode>mongodb</InlineCode>
             <InlineCode>express</InlineCode>
             <InlineCode>graphql</InlineCode>
-            <InlineCode>websocket</InlineCode>, <InlineCode>redis</InlineCode>
+            <InlineCode>websocket</InlineCode>
+            <InlineCode>redis</InlineCode>
           </>,
         ],
         images: [],
