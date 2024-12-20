@@ -331,6 +331,13 @@ export default function About({ params: { locale } }: Props) {
                     direction="column"
                   >
                     <Text id={institution.name} variant="heading-strong-l">
+                      {institution.title}
+                    </Text>
+                    <Text
+                      id={institution.name}
+                      variant="body-default-s"
+                      onBackground="brand-weak"
+                    >
                       {institution.name}
                     </Text>
                     <Text
