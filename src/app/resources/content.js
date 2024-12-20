@@ -52,7 +52,7 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Fullstack dev</>,
+  headline: <>Fullstack developer</>,
   subline: (
     <>
       I'm a developer skilled in <InlineCode>frontend</InlineCode>,{" "}
@@ -61,7 +61,7 @@ const home = {
       <InlineCode>landing-pages</InlineCode>,{" "}
       <InlineCode>server-side</InlineCode>, <InlineCode>client-side</InlineCode>{" "}
       and some stuffs in personal projects, including a{" "}
-      <InlineCode>assistant</InlineCode> soon to be available for everyone..
+      <InlineCode>assistant</InlineCode> soon to be available for everyone.
     </>
   ),
 };
@@ -96,29 +96,56 @@ const about = {
     ),
   },
   work: {
-    display: false, // set to false to hide this section
+    display: true, // set to false to hide this section
     title: "Work Experience",
     experiences: [
       {
         company: "rentzApp",
-        timeframe: "2021 - Present",
+        timeframe: "June 2021 - December 2024",
         role: "Fullstack developer",
         achievements: [
-          <>App mobile: react native, javascript, graphql, redux</>,
-          <>Frontend: react, nextjs, typescript, bootstrap, graphql, scss</>,
-          <>Backend: nodejs, mongodb, express, graphql, websocket, redis</>,
+          <>
+            Mobile <InlineCode>react native</InlineCode>
+            <InlineCode>javascript</InlineCode>
+            <InlineCode>graphql</InlineCode>
+            <InlineCode>redux</InlineCode>
+          </>,
+          <>
+            Frontend <InlineCode>react</InlineCode>
+            <InlineCode>nextjs</InlineCode>
+            <InlineCode>typescript</InlineCode>
+            <InlineCode>bootstrap</InlineCode>
+            <InlineCode>graphql</InlineCode>
+            <InlineCode>scss</InlineCode>
+          </>,
+          <>
+            Backend <InlineCode>nodejs</InlineCode>
+            <InlineCode>mongodb</InlineCode>
+            <InlineCode>express</InlineCode>
+            <InlineCode>graphql</InlineCode>
+            <InlineCode>websocket</InlineCode>, <InlineCode>redis</InlineCode>
+          </>,
         ],
         images: [],
       },
     ],
   },
   studies: {
-    display: false, // set to false to hide this section
-    title: "Studies",
+    display: true, // set to false to hide this section
+    title: "Study",
     institutions: [
       {
-        name: "Estácio",
-        description: <>Studying "computer science" at Estácio College</>,
+        title: "Estácio University",
+        name: "Computer Science",
+        description: (
+          <>
+            I am currently completing my higher education at Estácio, with
+            graduation expected in May 2025. This journey has been instrumental in
+            building a strong foundation in critical thinking and
+            problem-solving, preparing me to pursue a degree in Computer Science
+            and tackle future academic and professional challenges
+          </>
+        ),
       },
     ],
   },
@@ -194,6 +221,18 @@ const about = {
           //     height: 9
           // },
         ],
+      },
+      {
+        title: "Lua",
+        description: (
+          <>
+            Skilled in Lua, I use its lightweight and efficient scripting
+            capabilities to create game mechanics, customize tools, and develop
+            configurations. I maintain dotfiles for AwesomeWM and Neovim on my
+            GitHub, showcasing my ability to leverage Lua’s simplicity and
+            flexibility to build fast, scalable, and innovative solutions.
+          </>
+        ),
       },
     ],
   },
