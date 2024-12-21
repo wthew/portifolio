@@ -1,13 +1,7 @@
 "use client";
 
 import React from "react";
-import {
-  Radar,
-  RadarChart,
-  PolarGrid,
-  PolarAngleAxis,
-  ResponsiveContainer,
-} from "recharts";
+import { Radar, RadarChart, PolarGrid, PolarAngleAxis } from "recharts";
 import ChartContainer, { colors } from "./Container";
 
 const data = [

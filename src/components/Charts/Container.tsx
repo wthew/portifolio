@@ -1,11 +1,12 @@
 import { Flex, Heading } from "@/once-ui/components";
 import React, { ReactElement } from "react";
 import { ResponsiveContainer } from "recharts";
+import styles from "./Container.module.scss";
 
 type Props = { title?: string; children: ReactElement };
 export default function ChartContainer(props: Props) {
   return (
-    <Flex fillHeight fillWidth direction="column">
+    <Flex className={styles.container} fillHeight fillWidth direction="column">
       {props.title && (
         <Heading wrap="balance" variant="display-strong-s">
           {props.title}

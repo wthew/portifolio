@@ -14,6 +14,7 @@ import TableOfContents from "@/components/about/TableOfContents";
 import styles from "@/components/about/about.module.scss";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { useTranslations } from "next-intl";
+import KnownledgeChart from "@/components/Charts/knowledge";
 
 export async function generateMetadata({
   params: { locale },
@@ -139,6 +140,9 @@ export default function About({ params: { locale } }: Props) {
                 ))}
               </Flex>
             )}
+            <Flex height="s" fillWidth>
+              <KnownledgeChart />
+            </Flex>
           </Flex>
         )}
         <Flex
@@ -260,6 +264,7 @@ export default function About({ params: { locale } }: Props) {
                       <Text
                         variant="heading-default-xs"
                         onBackground="neutral-weak"
+                        style={{ whiteSpace: "nowrap", marginLeft: '1rem'}}
                       >
                         {experience.timeframe}
                       </Text>
@@ -271,7 +276,7 @@ export default function About({ params: { locale } }: Props) {
                     >
                       {experience.role}
                     </Text>
-                    <Flex as="ul" direction="column" gap="16">
+                    <Flex as="ul" direction="column" gap="16" fillWidth>
                       {experience.achievements.map(
                         (achievement: string, index: any) => (
                           <Text

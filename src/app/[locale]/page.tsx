@@ -142,9 +142,6 @@ export default function Home({
             </Flex>
           </RevealFx>
 
-          <Flex height='xl'>
-            <KnownledgeChart />
-          </Flex>
         </Flex>
       </Flex>
       {/* <RevealFx translateY="16" delay={0.6}>
