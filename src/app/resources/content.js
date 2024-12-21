@@ -31,11 +31,11 @@ const social = [
     icon: "github",
     link: "https://github.com/wthew",
   },
-  // {
-  //     name: 'LinkedIn',
-  //     icon: 'linkedin',
-  //     link: 'https://www.linkedin.com/company/once-ui/',
-  // },
+  {
+      name: 'LinkedIn',
+      icon: 'linkedin',
+      link: 'https://www.linkedin.com/in/wellington-queiroz-6149191b6/',
+  },
   // {
   //     name: 'X',
   //     icon: 'x',
