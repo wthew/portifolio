@@ -140,9 +140,6 @@ export default function About({ params: { locale } }: Props) {
                 ))}
               </Flex>
             )}
-            <Flex height="s" fillWidth>
-              <KnownledgeChart />
-            </Flex>
           </Flex>
         )}
         <Flex
